@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Model checkpoints
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Large processed data
+*.npy
+*.npz
+
+# Experimental outputs
+paper_outputs/
+outputs/
+results/
+Results/
+recovered_outputs/
+
+# Prediction / metric files
+*predictions*.csv
+*metrics*.json
+*history*.csv
+
+# Temporary files
+temp/
+tmp/
+smoke*/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
