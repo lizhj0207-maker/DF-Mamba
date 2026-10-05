@@ -25,7 +25,13 @@ DF-Mamba/
 │       ├── run_mamba_cls_last_casf_seed0.py
 │       └── run_mamba_mpro_5fold.py
 └── data/
-    └── README.md
+    ├── README.md
+    └── labels/
+        ├── CASF2007_core_test_label.csv
+        ├── CASF2013_core_test_label.csv
+        ├── CASF2016_core_test_label.csv
+        ├── SARS_CoV2_CoV_labels.csv
+        └── v2020_general_exclude_core_label.csv
 ```
 
 ## Model
@@ -47,13 +53,13 @@ DF-Mamba contains two main training stages.
 
 ## Datasets
 
-Large raw structures and locally processed feature tensors are not redistributed directly in this repository.
+Small label files used by the training/evaluation scripts are included under `data/labels/`.
 
-Dataset sources and preparation information are provided in:
+Large raw structures and locally processed feature tensors are not redistributed directly in this repository. Dataset sources and preparation information are provided in:
 
 [data/README.md](data/README.md)
 
-The datasets are derived primarily from PDBbind, CASF benchmark sets, and resources released with the original CAPTURE/DFFormer project.
+The source datasets are derived primarily from PDBbind, CASF benchmark sets, and resources released with the original CAPTURE/DFFormer project.
 
 Original CAPTURE repository:
 
@@ -101,7 +107,7 @@ Locally generated experimental outputs are not included in this repository, incl
 - temporary preprocessing files
 - locally generated feature tensors
 
-Please refer to [data/README.md](data/README.md) for the original data sources.
+Please refer to [data/README.md](data/README.md) for the source datasets and data-availability notes.
 
 ## Acknowledgements
 
